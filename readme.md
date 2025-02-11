@@ -69,19 +69,12 @@ CREATE TABLE bookings (
 ### **4 Configure Environment Variables**
 
 #### **1 Create a .env file in the project root and add the following:**
-DB_HOST=your_host 
-
-DB_USER=your_user 
-
-DB_PASS=your_password 
-
-DB_NAME=irctc 
-
-JWT_SECRET=your_jwt_secret 
-
-ADMIN_API_KEY=your_admin_key 
-
-PORT=3000
+DB_HOST=localhost
+DB_USER=irctc_user
+DB_PASS=securepassword
+DB_NAME=irctc_db
+JWT_SECRET=myjwtsecret
+ADMIN_API_KEY=mysecureapikey
 
 ### **5 Start the Server**
 
