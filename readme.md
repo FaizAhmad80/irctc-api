@@ -25,6 +25,7 @@ This is a simple API for a railway management system where users can check train
 ### **1️ Clone the repository**
 <!-- ```sh -->
 git clone https://github.com/FaizAhmad80/irctc-api.git
+
 cd irctc-api
 
 ### **2 install dependencies**
@@ -166,7 +167,7 @@ npm start
 - **Endpoint:** `http://localhost:3000/api/bookings`
 - **Headers:**
   ```json
-  { "Authorization": "Bearer your_jwt_token_here", "Content-Type": "application/json"}
+  { "Authorization": "your_jwt_token_here", "Content-Type": "application/json"}
 - **Body:**
     ```json
     {
