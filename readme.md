@@ -152,7 +152,7 @@ npm start
 - **Endpoint:** `http://localhost:3000/api/trains?source=Mumbai&destination=Delhi`
 - **Headers:**
   ```json
-  { "x-api-key": "9a8b7c6d5e4f3g2h1i0jklmnopqrstuvwxyz", "Content-Type": "application/json" }
+  { "Content-Type": "application/json" }
 - **Response:**
     ```json
     [
