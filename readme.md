@@ -70,10 +70,15 @@ CREATE TABLE bookings (
 
 #### **1 Create a .env file in the project root and add the following:**
 DB_HOST=localhost
+
 DB_USER=irctc_user
+
 DB_PASS=securepassword
+
 DB_NAME=irctc_db
+
 JWT_SECRET=myjwtsecret
+
 ADMIN_API_KEY=mysecureapikey
 
 ### **5 Start the Server**
