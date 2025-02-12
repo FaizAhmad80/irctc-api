@@ -23,22 +23,28 @@ This is a simple API for a railway management system where users can check train
 ## **Installation & Setup**
 
 ### **1️ Clone the repository**
-<!-- ```sh -->
+```bash
 git clone https://github.com/FaizAhmad80/irctc-api.git
 
 cd irctc-api
+```
 
 ### **2 install dependencies**
 
+```bash
 npm init -y
 npm install express mysql2 jsonwebtoken bcrypt dotenv sequelize
+```
 
 ### **3 Set up the MySQL database**
 
 #### **1 Open MySQL and create a new database:**
+```sql
 CREATE DATABASE irctc;
+```
 
 #### **2 Run the following script to create tables:**
+```sql
 USE irctc;
 
 CREATE TABLE users (
@@ -65,25 +71,24 @@ CREATE TABLE bookings (
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (train_id) REFERENCES trains(id)
 );
+```
 
 ### **4 Configure Environment Variables**
 
 #### **1 Create a .env file in the project root and add the following:**
+```
 DB_HOST=localhost
-
 DB_USER=irctc_user
-
 DB_PASS=J!4d!G2r@kP1yX7mN%q
-
 DB_NAME=irctc_db
-
 JWT_SECRET=6b2a1d5f8e3c4a9b0d7e6f1c2a5b8d3f
-
 ADMIN_API_KEY=9a8b7c6d5e4f3g2h1i0jklmnopqrstuvwxyz
+```
 
 ### **5 Start the Server**
-
+```sh
 npm start
+```
 
 ### **6 Use Postman to Test API**
 
